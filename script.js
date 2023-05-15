@@ -171,7 +171,7 @@ const renderTableData = function (petArr) {
     <td><i class="${sterlized_css}"></i></td>
     <td class = "bmi_java">${x}</td>
     <td>${petArr[i].date}</td>
-    <td><button class="btn btn-danger" onclick="deletePet(${petArr[i].id})">Delete</button></td>`;
+    <td><button class="btn btn-danger" onclick="deletePet('${petArr[i].id}')">Delete</button></td>`;
     //Chèn thêm 1 hàng
     tableBodyEl.appendChild(row);
   }
